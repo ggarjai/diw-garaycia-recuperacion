@@ -1,0 +1,90 @@
+main {
+
+    .profile {
+
+        height: 80rem;
+        width: 100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        @include linear-gradient($color-background, 0.9, 0.9, 0.95, 0.95, 1);
+    
+
+
+            height: 70rem;
+            width: 100%;
+            margin: 1.25rem 0 0 0;
+            position: relative;
+            
+
+
+            
+            .form-fields {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 1.25rem;
+                grid-row-gap: 1.5625rem;
+              
+                li {
+                  margin-bottom: 0;
+              
+                    label {
+                        display: block;
+                        margin-bottom: .3125rem;
+                        font-weight: bold;
+                    }
+                
+                    input[type="text"],
+                    input[type="email"],
+                    select {
+                        width: 20rem;
+                        height: 2.8125rem;
+                        border-radius: .25rem;
+                        padding: .625rem;
+
+                
+                        &:focus {
+                        outline: none;
+                        border-color: #2ecc71;
+                        }
+                    }
+                
+                    input[type="password"].narrow-field {
+                        width: 12.5rem;
+                    }
+                
+                    select.narrow-field {
+                        width: 10.625rem;
+                    }
+                
+                    input[type="text"].wide-field {
+                        width: 28.4375rem;
+                    }
+                
+                    .button-small {
+                        display: inline-block;
+                        margin-left: .625rem;
+                        width: 5.75rem;
+                        height: 2rem;
+                        line-height: 2rem;
+                        text-align: center;
+                        border-radius: .25rem;
+                        border: none;
+                        background-color: #2ecc71;
+                        color: #fff;
+                        text-decoration: none;
+                        font-size: .875rem;
+                
+                        &:hover {
+                        background-color: #27ae60;
+                        }
+                    }
+                }
+              }    
+
+        
+    
+    }
+
+}
