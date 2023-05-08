@@ -1,0 +1,8 @@
+@mixin linear-gradient($color, $opacities...) {
+    $gradient: rgba($color, nth($opacities, 1));
+    @for $i from 2 through length($opacities) {
+      $opacity: nth($opacities, $i);
+      $gradient: #{$gradient}, rgba($color, $opacity);
+    }
+    background: linear-gradient(to bottom, $gradient);
+  }

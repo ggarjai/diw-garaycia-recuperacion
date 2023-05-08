@@ -1,0 +1,84 @@
+nav {
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-background;
+    color: $color-secondary;
+    padding: 0% 4%;
+    background: linear-gradient(to bottom, $color-secondarybg, $color-background, $color-background, $color-secondarybg, $color-secondarybg);
+
+    .logo {
+      font-size: 1.2rem;
+    }
+  
+    .menu {
+
+      display: flex;
+      width: 55%;
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: 0 .3125rem 0 0;
+        text-decoration: none;
+        color: inherit;
+        
+
+
+
+        a {
+
+          display: flex;
+          justify-content: center;
+          
+
+          width: 100%;
+          font-family: $font-family;
+          font-style: normal;
+          font-weight: $font-regular;
+          font-size: $font-h4;
+          border-bottom: 3px solid $color-main;
+          padding: 15px 0;
+    
+          .active {
+
+            border-bottom: 3px solid $color-main;
+            
+          }
+  
+        }
+
+      }
+
+
+
+
+
+    }
+  
+    .register {
+
+      @include linear-gradient($color-main, 0.7, 0.7, 0.6, 0.5, 0.4);
+      border-radius: .1875rem;
+      padding: .625rem .9375rem;
+      border: none;
+      letter-spacing: 0.04rem;
+      font-size: $font-p;
+      font-family: $font-family;
+      font-weight: $font-bold;
+      cursor: pointer;
+
+      &:hover {
+        
+        @include linear-gradient($color-main, 1, 1, 0.9, 0.8, 0.7);
+
+
+      }
+      
+
+    }
+  }

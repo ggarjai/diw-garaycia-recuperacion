@@ -1,0 +1,41 @@
+//COLORES
+
+    //principales
+        //Variable                      //Valor
+        $color-main             :      #FFC500;
+        $color-background       :      #2D2D2D;
+
+    //secundarios
+        $color-secondarybg      :      #1E1E1E;
+        $color-secondary        :      #FFFFFF;
+
+
+
+//TIPOGRAFÍA
+
+    //Peso
+        //Variable                     //Valor
+        $font-family            :       'Roboto', sans-serif;
+        $font-regular           :       400;
+        $font-medium            :       500;
+        $font-bold              :       700;
+
+    //Tamaño
+        //Variable                      //Valor
+        $font-h1                :       64;
+        $font-h2                :       32;
+        $font-h3                :       24;
+        $font-h4                :       20;
+        $font-p                 :       16;
+        $font-s                 :       12;
+
+
+//FORMULARIO PERFIL
+        $form-width             :       800px;
+        $form-field-width       :       320px;
+        $form-password-width    :       200px;
+        $form-button-width      :       92px;
+        $form-gender-width      :       170px;
+        $form-card-field-width  :       455px;
+        $form-spacing-horizontal:       20px;
+        $form-spacing-vertical  :       25px;
