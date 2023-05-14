@@ -5,6 +5,10 @@
 
 //SASS utilities
 @import './src/sass/utilities/mixins';
+
+//SASS buttons
+@import './src/sass/components/buttons.scss';
+
 //SASS layout
 @import './src/sass/layout/footer';
 @import './src/sass/layout/header';
@@ -12,8 +16,11 @@
 
 //SASS pages
 @import './src/sass/pages/home';
+@import './src/sass/pages/news';
+@import './src/sass/pages/concerts';
 @import './src/sass/pages/login';
 @import './src/sass/pages/shop';
+@import './src/sass/pages/register';
 @import './src/sass/pages/profile';
 
 

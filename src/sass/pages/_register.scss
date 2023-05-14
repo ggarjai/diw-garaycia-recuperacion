@@ -1,14 +1,19 @@
-main {
+.registro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color-secondarybg;
 
-    
-    .profile {
+    .register {
         background-color: $color-background;
-        height: 52rem;
-        width: 100%;
+        min-width: 100px;
+        height: 100%;
+        width: 60%;
+        margin-top: 1.875rem;
         position: relative;
         display: flex;
         justify-content: center;
-        position: relative;
+        align-items: center;
         overflow: hidden;
         border-bottom: .5rem solid $color-main;
 
@@ -29,18 +34,33 @@ main {
         }
 
         form {
-            padding: 30px;
+            padding: 1.875rem;
 
             .form-fields {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-column-gap: 1.25rem;
-                grid-row-gap: 1.25rem;
                 padding: 2rem 0 0 0;
                 
                 li {
-                    margin-bottom: 0;
                     
+                    margin-bottom: .9375rem;
+                    
+                    a {
+                        display: inline-block;
+                        margin-right: .625rem;
+
+                        img {
+
+                        }
+                    }
+
+                    input[type="checkbox"] {
+                        position: absolute;
+
+                    }
+                    label[for="terms"] {
+                        position: relative;
+                        margin: 1.25rem 0 0 1.25rem;
+                    }
+
                     label {
                         display: block;
                         margin-bottom: .3125rem;
@@ -58,10 +78,10 @@ main {
 
                     input[type="text"],
                     input[type="email"],
+                    input[type="password"],
                     select {
                         width: 20rem;
                         height: 2.8125rem;
-                        
                         border-radius: .25rem;
                         padding: .625rem;
                         border: .0625rem solid $color-main;
@@ -70,22 +90,9 @@ main {
                         &:focus {
                         outline: none;
                         border-color: $color-secondary;
-                        
                         }
                     }
-                
-                    input[type="password"].narrow-field {
-                        width: 12.5rem;
-                        height: 2.8125rem;
-                        border-radius: .25rem;
-                        padding: .625rem;
-                        border: .0625rem solid $color-main;
-                        background-color: $color-secondarybg;
-                        &:focus {
-                            outline: none;
-                            border-color: $color-secondary;
-                            }
-                    }
+            
                 
                     select.narrow-field {
                         width: 10.625rem;

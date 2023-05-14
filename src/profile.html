@@ -15,39 +15,44 @@
       <nav>
         <a href="#" class="logo">LOGO</a>
           <ul class="menu">
-            <li class="active"><a href="/src/index.html">INICIO</a></li>
+            <li><a href="/src/index.html">INICIO</a></li>
             <li><a href="/src/news.html">NOTICIAS</a></li>
             <li><a href="/src/shop.html">TIENDA</a></li>
             <li><a href="/src/concerts.html">CONCIERTOS</a></li>
             <li><a href="/src/lyrics.html">LETRAS</a></li>
           </ul>
-        <a class="register" href="/src/profile.html">Entrar</button>
+        <a class="register" href="/src/register.html">Entrar</button>
       </nav>
     </header>
 
     <main>
       <article class="profile">
+        <div class="profile-img">
+          <img src="/src/img/user-circle.png">
+          <a href="#" class="button-small">Cambiar</a>
+        </div>
         <form>
+          <h1>Mi perfil</h1>
           <ul class="form-fields">
             <li>
               <label for="name">Nombre</label>
-              <input type="text" id="name" name="name">
+              <input type="text" placeholder="Introduce tu nombre" onfocus="this.placeholder=''" id="name" name="name">
             </li>
             <li>
               <label for="surname">Apellidos</label>
-              <input type="text" id="surname" name="surname">
+              <input type="text" placeholder="Introduce tus apellidos" onfocus="this.placeholder=''" id="surname" name="surname">
             </li>
             <li>
               <label for="username">Nombre de usuario</label>
-              <input type="text" id="username" name="username">
+              <input type="text" placeholder="Introduce nombre de usuario" onfocus="this.placeholder=''" id="username" name="username">
             </li>
             <li>
               <label for="email">Correo electrónico</label>
-              <input type="email" id="email" name="email">
+              <input type="email" placeholder="Introduce tu correo electrónico" onfocus="this.placeholder=''" id="email" name="email">
             </li>
             <li>
               <label for="password">Contraseña</label>
-              <input type="password" id="password" name="password" class="narrow-field">
+              <input type="password" placeholder="Introduce tu contraseña" onfocus="this.placeholder=''" id="password" name="password" class="narrow-field">
               <a href="#" class="button-small">Cambiar</a>
             </li>
             <li>
@@ -60,31 +65,40 @@
             </li>
             <li>
               <label for="address">Dirección</label>
-              <input type="text" id="address" name="address">
+              <input type="text" placeholder="Introduce tu dirección" onfocus="this.placeholder=''" id="address" name="address">
             </li>
             <li>
               <label for="city">Localidad</label>
-              <input type="text" id="city" name="city">
+              <input type="text" placeholder="Introduce tu localidad" onfocus="this.placeholder=''" id="city" name="city">
             </li>
             <li>
               <label for="state">Provincia</label>
-              <input type="text" id="state" name="state">
+              <input type="text" placeholder="Introduce tu provincia" onfocus="this.placeholder=''" id="state" name="state">
             </li>
             <li>
               <label for="country">País</label>
               <select id="country" name="country" class="narrow-field">
                 <option value="spain">España</option>
+                <option value="argentina">Argentina</option>
+                <option value="mexico">México</option>
                 <option value="france">Francia</option>
                 <option value="germany">Alemania</option>
+                <option value="chile">Chile</option>
+                <option value="peru">Perú</option>
+                <option value="costarica">Costa Rica</option>
+                <option value="drepublic">República Dominicana</option>
               </select>
             </li>
             <li>
-              <label for="card-number">Número de tarjeta</label>
-              <input type="text" id="card-number" name="card-number" class="wide-field">
+              <label for="card-name">Nombre de tarjeta</label>
+              <input type="text" placeholder="Introduce el nombre de la tarjeta" onfocus="this.placeholder=''" id="card-name" name="card-name" class="wide-field">
             </li>
             <li>
-              <label for="card-name">Nombre de tarjeta</label>
-              <input type="text" id="card-name" name="card-name" class="wide-field">
+              <label for="card-number">Número de tarjeta</label>
+              <input type="text" placeholder="Introduce el número de la tarjeta" onfocus="this.placeholder=''" id="card-number" name="card-number" class="wide-field">
+            </li>
+            <li>
+              <a href="#" class="button-small">Limpiar</a><a href="#" class="button-small">Actualizar</a>
             </li>
           </ul>
         </form>

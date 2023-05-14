@@ -4,7 +4,8 @@ h1 {
 
     font-family: $font-family;
     font-weight: $font-bold;
-
+    color: $color-main;
+    font-size: $font-h1;
 }
 
 h2 {
@@ -12,6 +13,7 @@ h2 {
     font-family: $font-family;
     font-weight: $font-medium;
 
+    font-size: $font-h2;
 }
 
 h3 {
@@ -19,6 +21,7 @@ h3 {
     font-family: $font-family;
     font-weight: $font-medium;
 
+    font-size: $font-h3;
 }
 
 h4 {
@@ -26,6 +29,7 @@ h4 {
     font-family: $font-family;
     font-weight: $font-medium;
 
+    font-size: $font-h4;
 }
 
 p {
@@ -33,11 +37,24 @@ p {
     font-family: $font-family;
     font-weight: $font-regular;
 
+    font-size: $font-p;
 }
 
 .small {
 
     font-family: $font-family;
     font-weight: $font-regular;
-    
+    color: $color-main;
+    font-size: $font-s;
+}
+
+label {
+    font-family: $font-family;
+    font-weight: $font-medium;
+    color: $color-main;
+    font-size: $font-s;
+}
+
+input {
+    color: $color-secondary;
 }

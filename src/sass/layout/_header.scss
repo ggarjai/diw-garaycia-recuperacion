@@ -53,20 +53,21 @@ nav {
     }
   
     .register {
-
-      @include linear-gradient($color-main, 0.7, 0.7, 0.6, 0.5, 0.4);
-      border-radius: .1875rem;
+      border: 1px solid black;
+      @include linear-gradient($color-main, 0.8, 0.8, 0.7, 0.6, 0.5);
+      color: $color-secondarybg;
+      border-radius: 0.35rem;
       padding: .625rem .9375rem;
-      border: none;
+
       letter-spacing: 0.04rem;
       font-size: $font-p;
       font-family: $font-family;
       font-weight: $font-bold;
-      cursor: pointer;
+
 
       &:hover {
+        background-color: $color-main;
         
-        @include linear-gradient($color-main, 1, 1, 0.9, 0.8, 0.7);
 
 
       }
